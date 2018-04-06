@@ -22,7 +22,7 @@ import pe.com.core.entity.Categoria;
 @WebService(serviceName = "CategoriaWs")
 public class CategoriaWs {
 
-    private final CategoriaDao categoriaDao = new CategoriaDao()
+    private final CategoriaDao categoriaDao = new CategoriaDao();
 
     @WebMethod(operationName = "registrarCategoria")
     public String registrar(@WebParam(name = "nombre") String nombre) {
